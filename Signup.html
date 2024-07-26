@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="sig.css">
+    <script src="sig.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class="container">
+         <h1 class="form-title"> Registration</h1><br><br>
+        <form action="Signup.html">
+    <div class="main-user-info">
+        <form name="RegForm" onsubmit="return validateForm()">
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="Name" 
+                    placeholder="Enter your full name" />
+                <span id="name-error" class="error-message"></span>
+            </p>
+            <p>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="Address" 
+                    placeholder="Enter your address" />
+                <span id="address-error" class="error-message"></span>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="EMail" 
+                    placeholder="Enter your email" />
+                <span id="email-error" class="error-message"></span>
+            </p>
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="Password" />
+                <span id="password-error" class="error-message"></span>
+            </p>
+            <p>
+                <label for="city">City:</label>
+                <select id="city" name="city">
+                    <option value="">
+                        Select City
+                    </option>
+                    <option value="a">
+                    Trivantrum
+                    </option>
+                    <option value="b">
+                        Kollam
+                    </option>
+                    <option value="c">
+                        Pathanamthitta
+                    </option>
+                    <option value="d">
+                        Alappuzha
+                    </option>
+                    <option value="e">
+                        Kottayam
+                    </option>
+                    <option value="f">
+                    Idukki
+                    </option>
+                    <option value="g">
+                        Ernakulam
+                    </option>
+                    <option value="h">
+                        Thrissur
+                    </option>
+                    <option value="i">
+                        Palakkad
+                    </option>
+                    <option value="j">
+                        Malappuram
+                    </option>
+                    <option value="k">
+                        Kozhikode
+                    </option>
+                    <option value="l">
+                    Wayanad
+                    </option>
+                    <option value="m">
+                        Kannur
+                    </option>
+                    <option value="n">
+                        Kasargod
+                    </option>
+                    </select>
+                <span id="city-error" class="error-message"></span>
+            </p>
+            <p>
+            <label for="" >Phone number :</label>
+            <input type="number" name="ph" id="" placeholder="enter your Phone">
+        </p>
+        <p>
+            <label for="" >Dob:</label><input  type="date" name="" id="demo" max="2018-7-19">
+        </p>
+        <p>
+            <label for="" >Age:</label><input type="number">
+        </p>
+        <label for="" >Gender:</label> male <input type="radio" name="g" id=""> female <input type="radio" name="g" > others <input type="radio" name="g"><br><br>
+        <label for="">User Name :</label>
+        <input type="text"  placeholder="username"><br><br>
+        <label for="">Confirm password :</label>
+        <input type="password"><br><br>
+        <button type="button" onclick="validateForm()">Submit</button>
+        </form>
+ </div>
+ </div>  
+</div>
+<script>
+$(document).ready(function() {
+    $("RegForm").validate({
+        rules: {
+            name: {
+                required: true,
+            },
+            address: {
+                required: true,
+            },
+            email: {
+                required: true,
+                email: true,
+            },
+            password: {
+                required: true,
+                minlength: 6,
+            },
+            city: {
+                required: true,
+            },
+        },
+        messages: {
+            name: {
+                required: "Please enter your name.",
+            },
+            address: {
+                required: "Please enter your address.",
+            },
+            email: {
+                required: "Please enter your email address.",
+                email: "Please enter a valid email address.",
+            },
+            password: {
+                required: "Please enter a password.",
+                minlength: "Password must be at least 6 characters.",
+            },
+            city: {
+                required: "Please select your city.",
+            },
+        },
+        errorElement: "span", 
+        errorPlacement: function(error, element) {
+            
+            error.insertAfter(element); 
+        },
+        submitHandler: function(form) {
+            
+            form.submit();
+        }
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    background-image: url(elibrary.webp);
+    background-size: cover;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background-color: #f4f4f4;
+}
+
+header {
+background-color: #333;
+color: #fff;
+padding: 10px 0;
+}
+
+header nav ul {
+list-style-type: none;
+text-align: center;
+}
+
+header nav ul li {
+display: inline;
+margin-right: 20px;
+}
+
+header nav ul li a {
+color: #fff;
+text-decoration: none;
+}
+
+.about-section {
+padding: 50px 0;
+text-align: center;
+}
+
+.container {
+    color: white;
+width: 80%;
+margin: auto;
+}
+
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 10px 0;
+position: absolute;
+bottom: 0;
+width: 100%;
+}

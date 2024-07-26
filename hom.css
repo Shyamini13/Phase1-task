@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0,0.5)50%,);
+    background-image: url(home.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.logo{
+    align-content: center;
+    color: azure;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    padding-left: 10px;
+    float: right;
+    padding: top;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    }
+    
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+    }
+    
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+    }
+    
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    }
+
+.navbar{
+    width: 120px;
+    height: 75px;
+    margin: auto;
+
+}
+.header{
+    background-color: rgb(173, 83, 27);
+    color: aqua;
+}
+
+.icon{
+    width: 200px;
+    float:none;
+    height: 20px;
+} 
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 10px;
+    padding: auto;
+    padding-right: 400px;
+    padding-top: 5px;
+
+}
+
+ul{
+     float: left;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+ul li{
+    list-style-type: none;
+    text-align: center;
+    display: inline;
+    list-style: none;
+    margin-left: 42px;
+    margin-top: 27px;
+    font-size: 14px;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color: snow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition:0.4s ease-in-out
+
+
+}
+
+ul li a:hover{
+    color: rgb(255, 106, 0);
+}
+
+.content{ 
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 1000px;
+    padding: auto; 
+    width: 40px;
+    height: auto; 
+    margin: auto;
+    color: white;
+    flex: none;
+    
+
+
+}
+.p{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    height: 70px;
+    font-family: arial;
+    letter-spacing: 2.5px;
+    line-height: 18px;
+    color: ghostwhite;
+
+
+}
+
+.content h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-left: 50px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;;
+    height: 40px;
+    background-color: indianred;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: antiquewhite;
+    transition: 4s ease ;
+}
+.cn a{
+    text-decoration: none;
+    color: brown;
+    transition: 3s ease;
+
+}
+
+.cn:hover{
+    background-color: darkorange;
+}
+
+ 
+.content span{
+    color: white;
+    font-size: 6opx;
+
+}
+
+.form{
+    width: 250px;
+    height: 300px;
+    background: linear-gradient(to top, rgba(0,0,0,0));
+    position: absolute;
+    top: 200px;
+    left: 970px;
+    border-radius: 10px;
+    padding: 35px;
+    align-items: flex-end;
+
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 22px;
+    /* color: brown; */
+    /* background-color: white; */
+    margin: 2px;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid brown;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: brown;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family:sans-serif ;
+    margin-top: 30px;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: aliceblue;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 100px;
+    height: 40px;
+    background:rgb(255, 106, 0);
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    position:static;
+}
+
+btnn:hover{
+    background: white;
+    color: brown;
+}
+
+.btnn a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+.form .link a{
+    text-decoration: none;
+    color: brown;
+}
+
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}

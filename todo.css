@@ -1,0 +1,73 @@
+*{
+    margin: 30px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 600px;
+    /* background-color: rgb(9, 36, 27); */
+    padding: 40px;
+}
+
+.todo-app{
+    width: 500px;
+    max-width:  540px; ;
+    background-color: brown;
+    margin: 100px;
+    padding: 20px 20px 40px;
+    border-radius: 10px ;
+}
+.todo-app h2 {
+    width: 300px; 
+    margin-left: 20px;
+
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: cornsilk;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background:#ff5945;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li checked{
+    color: black;
+    text-decoration: line-through;
+}
+
+ul li checked::before{
+    background-image: url(images/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    border-radius:0 ;
+}
